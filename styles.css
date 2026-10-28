@@ -137,6 +137,11 @@ address a:hover,
     font-size: .7rem;
 }
 
+.summary {
+    border-top: 1px solid var(--line);
+    border-bottom: 0;
+}
+
 .summary-text {
     max-width: 42rem;
     margin: 0;
