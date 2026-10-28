@@ -1,16 +1,159 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Personal Site</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-    <main id="main-content" class="site-shell">
-      <h1>Personal Site</h1>
-      <p>Under construction.</p>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Andrew Kelly is a software engineer in Dallas, TX." />
+  <title>Andrew Kelly | Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="site-shell" id="top">
+    <header class="resume-header">
+      <div>
+        <p class="eyebrow">Resume / 2026</p>
+        <h1>Andrew Kelly</h1>
+        <p class="role">Software Engineer</p>
+      </div>
+      <address><a href="mailto:andrew@andrewmkelly.com">andrew@andrewmkelly.com</a><br />Dallas, TX</address>
+      <div class="header-actions">
+        <a href="https://www.linkedin.com/in/andrew-kelly-6ba409285/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/AndrewK020" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="resume.pdf" target="_blank" download>Download resume ↓</a>
+    </header>
+
+    <main id="main-content">
+      <section class="summary section-row" aria-labelledby="summary-title">
+        <h2 id="summary-title">About</h2>
+        <div>
+          <p class="summary-text">I am a husband to a wonderful wife and father to three beautiful children. They bring
+            me great joy and meaning and help put a perspective on all things. I am grateful to God and all of the good
+            things He has given me.</p>
+          <div class="photos">
+            <img src="images/couple.jpg" width="653" height="1204"
+              alt="Andrew and his wife standing together in front of an arched mirror" />
+            <img src="images/zoo.jpg" width="768" height="1024"
+              alt="Andrew holding one of his children at the zoo, looking out over a pond" />
+            <img src="images/wedding.jpg" width="1400" height="1031"
+              alt="Andrew and his wife smiling at each other on their wedding day, beside the cake" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-row" id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title">Experience</h2>
+        <div class="entries">
+          <article class="entry">
+            <div class="entry-date">2019—Present</div>
+            <div>
+              <h3>Software Developer <span>/ Optimal Blue, Dallas, TX (remote)</span></h3>
+              <p class="levels">Level 4 (2026—present) · Level 3 (2024—2026) · Level 2 (2022—2024) · Level 1
+                (2020—2022) · Intern (2019—2020)</p>
+              <ul>
+                <li>Led our team's move from classic Azure Pipelines to YAML pipelines in version control. I built the
+                  proof of concept, migrated the whole team, presented our approach to other teams and advised them
+                  through their own migrations. Build times dropped 50%.</li>
+                <li>Led the move of the whole org from Selenium and Postman to Playwright. I followed the same path:
+                  proof of concept, full migration of my team, technical presentations, and guidance for other teams.
+                </li>
+                <li>In 2026, my team led a cross-org effort to move our UI components into a shared Angular library. The
+                  work took a lot of design and testing to make the library extensible and as easy to use as an
+                  open-source one.</li>
+                <li>Built real-time features with SignalR, including live streaming of integration updates to the UI and
+                  streamed responses in an LLM chat application.</li>
+                <li>Designed and shipped an agentic LLM chat application that lets mortgage clients query large datasets
+                  in plain language, using Semantic Kernel, Azure AI Services, RAG and multi-step agents. Led the
+                  company AI hackathon and shared tooling and best practices with other teams.</li>
+                <li>Manage Azure environments and networking, including VNets, private endpoints, DNS, Traffic Manager
+                  and load balancers. Wrote the Bicep templates the company now uses for deployments, working with
+                  DevOps.</li>
+                <li>Set up .NET Aspire and Docker dev containers for local development, and upgraded legacy
+                  applications to current .NET and Angular versions.</li>
+                <li>Mentor at least one developer at all times, review code across teams, and interview engineering
+                  candidates. Other teams regularly come to me for guidance.</li>
+                <li>Had one production defect in the past year across all supported applications.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="entry">
+            <div class="entry-date">Dec 2018—May 2019</div>
+            <div>
+              <h3>Software Developer Intern <span>/ Ayoka Systems, Dallas, TX</span></h3>
+              <ul>
+                <li>Built full stack, client-facing web applications in JavaScript and .NET in a consulting
+                  environment.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="split-row">
+        <section class="section-row" id="skills" aria-labelledby="skills-title">
+          <h2 id="skills-title">Skills</h2>
+          <div class="skill-groups">
+            <div>
+              <h3>Languages</h3>
+              <p>C#, TypeScript, JavaScript, Python (scripting), SQL, Swift and Go (personal projects)</p>
+            </div>
+            <div>
+              <h3>Backend</h3>
+              <p>.NET 8+, ASP.NET, Entity Framework, SignalR (WebSockets), Node.js</p>
+            </div>
+            <div>
+              <h3>Frontend</h3>
+              <p>Angular, HTML/CSS</p>
+            </div>
+            <div>
+              <h3>Cloud and infrastructure</h3>
+              <p>Azure (App Services, Functions, Cosmos DB, SQL, networking), Bicep, ARM templates, Docker, dev
+                containers, .NET Aspire</p>
+            </div>
+            <div>
+              <h3>Testing and delivery</h3>
+              <p>Playwright, Azure DevOps (YAML pipelines), GitHub Actions</p>
+            </div>
+            <div>
+              <h3>AI</h3>
+              <p>Semantic Kernel, Azure AI Services, Anthropic Claude, Open AI Codex, Github Copilot</p>
+            </div>
+            <div>
+              <h3>Platforms</h3>
+              <p>Windows, macOS, Linux, WSL</p>
+            </div>
+          </div>
+        </section>
+        <section class="section-row education" id="education" aria-labelledby="education-title">
+          <h2 id="education-title">Education</h2>
+          <div>
+            <h3>University of Texas at Dallas</h3>
+            <p>B.S. Computer Science<br /><span>2020</span></p>
+            <p>Capstone: led a student team that built a desktop application for medical research, working with a
+              faculty professor.</p>
+          </div>
+          <div>
+            <h3>Southern Methodist University</h3>
+            <p>Full Stack Web Development Bootcamp<br /><span>2019</span></p>
+          </div>
+          <div>
+            <h3>Bishop Lynch High School</h3>
+            <p>Dallas, TX<br /><span>2016</span></p>
+          </div>
+        </section>
+      </div>
     </main>
-  </body>
+
+    <footer class="resume-footer">
+      <span>© 2026 Andrew Kelly</span>
+      <span class="footer-links">
+        <a href="resume.pdf" target="_blank" download>Download resume ↓</a>
+        <a href="#top">Back to top ↑</a>
+      </span>
+    </footer>
+  </div>
+</body>
+
 </html>
